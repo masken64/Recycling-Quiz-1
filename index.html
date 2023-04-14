@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Recycling Quiz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Recycling Quiz</h1>
+    </div>
+    <p> Answer the questions below to find out how much do you know about recycling.</p>
+    <button onclick="startGame()" class="start-button" id="startGame">Start
+    </button>
+  </header>
+
+  <main>
+    <section>
+      <div>
+        <h3>Game</h3>
+      </div>
+      <div class="question-container">
+        <div>
+          <div class="questions" id="questionContent"> </div>
+
+          <div class="answers" id="answerContent"></div>
+        </div>
+
+        <div id="next-finsih"> <button class="button2" onclick="nextQuestion  ()" id="nextQuestion">Next</button>
+        </div>
+
+        <div id="storeDetails">
+          <h3>Type Your Username to Find Out Your Score </h3>
+          <h3 id="finalScore"></h3>
+          <input type="text" id="inputDetails"></input>
+          <button id="submitBtn">CONFRIM</button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section>
+      <div class="score">
+        <h3>Score</h3>
+        <div class="scoreboard" id="scoreboard">
+          <h2>Wins: <span class="win" id="winCount"></span> </h2>
+          <h2>Losses: <span class="loss" id="lossCount"></span></h2>
+        </div>
+        <div class="time-container">
+          <div class="timer" id="timerMessage"> </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
